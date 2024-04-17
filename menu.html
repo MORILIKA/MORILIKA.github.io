@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>桃園國際機場無線上網服務</title>
-    <link rel="stylesheet" href="./css/menu.css">
+
+    <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/menu.min.css">
+    
 </head>
 <body>
     <main class="menu-page">
@@ -17,18 +20,65 @@
            </a>
         </div>
         <div class="menu-bottom">
-            <a href="">
-                <img src="./images/1x/menu-bar-departure.webp" alt="">
-            </a>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#departmentModal">
+                <img src="./images/1x/menu-bar-departure.webp" alt="出發">
+            </button>
             <span class="button-line"></span>
-            <a href="">
-                <img src="./images/1x/menu-bar-arrival.webp" alt="">
-            </a>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#arrivalModal">
+                <img src="./images/1x/menu-bar-arrival.webp" alt="抵達">
+            </button>
             <span class="button-line"></span>
-            <a href="">
-                <img src="./images/1x/menu-bar-dining.webp" alt="">
-            </a>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#diningModal">
+                <img src="./images/1x/menu-bar-dining.webp" alt="餐飲">
+            </button>
         </div>
     </main>
+    <div class="modal redirectModal fade" id="departmentModal" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"><span class="font-900">出發</span><span class="en">｜Departure</span></h5>
+            </div>
+            <div class="modal-body">
+              <a href="" class="button-transparent">中文服務</a>
+              <hr>
+              <a href="" class="button-transparent">English Service</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal redirectModal fade" id="arrivalModal" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"><span class="font-900">抵達</span><span class="en">｜Arrival</span></h5>
+            </div>
+            <div class="modal-body">
+              <a href="" class="button-transparent">中文服務</a>
+              <hr>
+              <a href="" class="button-transparent">English Service</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal redirectModal fade" id="diningModal" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"><span class="font-900">餐飲</span><span class="en">｜Dining</span></h5>
+            </div>
+            <div class="modal-body">
+              <a href="" class="button-transparent">中文服務</a>
+              <hr>
+              <a href="" class="button-transparent">English Service</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="./plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+       
+    </script>
 </body>
 </html>

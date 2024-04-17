@@ -1,54 +1,61 @@
-@import url("base.css");
+@import url("base.min.css");
 /* w 414 h 736 */
-.index-page{
-    min-height: 100dvh;
-    height: 100%;
-    background-image: url(../images/1x/index-background.webp);
-    /* background-image: url(../no/index-design.webp); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-}
-.index-frame{
-    max-width: 576px;
-    margin: auto;
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
- 
-}
-.welcome{
-    width: 56%;
-    margin-top: 24%;
-}
-.middle{
-    width: 62%;
-    margin-bottom: 20%;
-}
-.button-agree{
-    width: 30%;
-    display: inline-block;
-    margin-bottom: 24%;
+.index-page {
+  min-height: 100dvh;
+  height: 100%;
+  background-image: url(../images/1x/index-background.webp);
+  /* background-image: url(../no/index-design.webp); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media screen and (orientation:landscape){
-    .index-frame{
+.index-frame {
+  max-width: 576px;
+  margin: auto;
+  height: 100dvh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.welcome {
+  width: 56%;
+  margin-top: 24%;
+}
+
+.middle {
+  width: 62%;
+  margin-bottom: 20%;
+}
+
+.button-agree {
+  width: 30%;
+  display: inline-block;
+  margin-bottom: 24%;
+}
+
+@media screen and (orientation: landscape) {
+  .index-frame {
+    -ms-flex-pack: center;
         justify-content: center;
-    }
-    .welcome{
-        width: 25dvw;
-        margin-top: 0;
-    }
-    .middle{
-        width: 30dvw;
-        margin-bottom: 5dvw;
-        margin-top: 3dvw;
-    }
-    .button-agree{
-        width: 15dvw;
-        margin-bottom: 0;
-    }
+  }
+  .welcome {
+    width: 25dvw;
+    margin-top: 0;
+  }
+  .middle {
+    width: 30dvw;
+    margin-bottom: 5dvw;
+    margin-top: 3dvw;
+  }
+  .button-agree {
+    width: 15dvw;
+    margin-bottom: 0;
+  }
 }
