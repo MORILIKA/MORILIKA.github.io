@@ -10,7 +10,18 @@
     <main class="index-page">
         <div class="index-frame">
             <img class="welcome" src="./images/1x/index-welcome.webp" alt="歡迎來到桃園國際機場">
-            <img class="middle" src="./images/1x/index-middle.webp" alt="">
+            <div class="middle">
+                <picture class="middle-icon">
+                    <source srcset="./images/1x/index-middle-light.webp" media="(orientation:landscape)">
+                    <img src="./images/1x/index-middle.webp">
+                </picture>
+                <picture class="middle-text">
+                    <source srcset="./images/1x/index-middle-text-landscape.webp" media="(orientation:landscape)">
+                    <img src="./images/1x/index-middle-text.webp">
+                </picture>
+            </div>
+            
+            <!-- <img class="middle" src="./images/1x/index-middle.webp" alt=""> -->
             <a class="button-agree" href="menu.html"><img src="./images/1x/index-agree.webp" alt="同意並繼續"></a>
         </div>
     </main>

@@ -13,24 +13,42 @@
     <main class="menu-page">
         <div class="menu-top">
            <a href="">
-            <img src="./images/1x/menu-fb.webp" alt="Facebook">
+            <picture>
+                <source srcset="./images/1x/menu-fb-landscape.webp" media="(orientation:landscape)">
+                <img src="./images/1x/menu-fb.webp" alt="Facebook">
+            </picture>
            </a>
            <a href="">
-            <img src="./images/1x/menu-blog.webp" alt="Blog">
+            <picture>
+              <source srcset="./images/1x/menu-blog-landscape.webp" media="(orientation:landscape)">
+              <img src="./images/1x/menu-blog.webp" alt="Blog">
+          </picture>
            </a>
         </div>
         <div class="menu-bottom">
-            <button type="button" data-bs-toggle="modal" data-bs-target="#departmentModal">
-                <img src="./images/1x/menu-bar-departure.webp" alt="出發">
-            </button>
-            <span class="button-line"></span>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#arrivalModal">
-                <img src="./images/1x/menu-bar-arrival.webp" alt="抵達">
-            </button>
-            <span class="button-line"></span>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#diningModal">
-                <img src="./images/1x/menu-bar-dining.webp" alt="餐飲">
-            </button>
+            <div class="menu-bottom-frame">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#departmentModal">
+                <picture>
+                  <source srcset="./images/1x/menu-bar-departure-landscape.webp" media="(orientation:landscape)">
+                  <img src="./images/1x/menu-bar-departure.webp" alt="出發">
+                </picture>
+              </button>
+              <span class="button-line"></span>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#arrivalModal">
+                <picture>
+                  <source srcset="./images/1x/menu-bar-arrival-landscape.webp" media="(orientation:landscape)">
+                  <img src="./images/1x/menu-bar-arrival.webp" alt="抵達">
+                </picture>
+              </button>
+              <span class="button-line"></span>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#diningModal">
+                <picture>
+                  <source srcset="./images/1x/menu-bar-dining-landscape.webp" media="(orientation:landscape)">
+                  <img src="./images/1x/menu-bar-dining.webp" alt="餐飲">
+                </picture>
+              </button>
+            </div>
+            
         </div>
     </main>
     <div class="modal redirectModal fade" id="departmentModal" tabindex="-1"  aria-hidden="true">
@@ -38,6 +56,8 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title"><span class="font-900">出發</span><span class="en">｜Departure</span></h5>
+              <button type="button" class="close-button" data-bs-dismiss="modal" aria-label="Close">
+              </button>
             </div>
             <div class="modal-body">
               <a href="" class="button-transparent">中文服務</a>
@@ -52,6 +72,8 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title"><span class="font-900">抵達</span><span class="en">｜Arrival</span></h5>
+              <button type="button" class="close-button" data-bs-dismiss="modal" aria-label="Close">
+              </button>
             </div>
             <div class="modal-body">
               <a href="" class="button-transparent">中文服務</a>
@@ -66,6 +88,8 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title"><span class="font-900">餐飲</span><span class="en">｜Dining</span></h5>
+              <button type="button" class="close-button" data-bs-dismiss="modal" aria-label="Close">
+              </button>
             </div>
             <div class="modal-body">
               <a href="" class="button-transparent">中文服務</a>
